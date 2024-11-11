@@ -16,6 +16,7 @@ startBtn.addEventListener('click', () => {
 
   const timerId = setInterval(() => {
     if (time <= 1000) {
+      Notiflix.Notify.success('Time is over');
       return clearInterval(timerId);
     }
     time -= 1000;
